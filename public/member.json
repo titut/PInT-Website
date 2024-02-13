@@ -1,0 +1,114 @@
+{
+    "members":[
+        {
+            "name": "Joseph Brown",
+            "team": "BFFC",
+            "linked_in": "a",
+            "instagram": null,
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": true,
+            "year": 1,
+            "img": "team-1.jpg"
+        },
+        {
+            "name": "Nancy White",
+            "team": "Out Maine",
+            "linked_in": "a",
+            "instagram": "korokoboom",
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": true,
+            "year": 1,
+            "img": "team-2.jpg"
+        },
+        {
+            "name": "Earl Martinez",
+            "team": "Hydroponics",
+            "linked_in": "a",
+            "instagram": "ckoron.lol",
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": true,
+            "year": 2,
+            "img": "team-3.jpg"
+        },
+        {
+            "name": "Josephine Allard",
+            "team": "Community Knights",
+            "linked_in": "a",
+            "instagram": null,
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": false,
+            "year": 2,
+            "img": "team-4.jpg"
+        },
+        {
+            "name": "Joseph Brown",
+            "team": "BFFC",
+            "linked_in": "a",
+            "instagram": null,
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": true,
+            "year": 3,
+            "img": "team-1.jpg"
+        },
+        {
+            "name": "Nancy White",
+            "team": "Out Maine",
+            "linked_in": "a",
+            "instagram": "korokoboom",
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": false,
+            "year": 3,
+            "img": "team-2.jpg"
+        },
+        {
+            "name": "Earl Martinez",
+            "team": "Hydroponics",
+            "linked_in": "a",
+            "instagram": "ckoron.lol",
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": false,
+            "year": 4,
+            "img": "team-3.jpg"
+        },
+        {
+            "name": "Josephine Allard",
+            "team": "Community Knights",
+            "linked_in": "a",
+            "instagram": null,
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": false,
+            "year": 4,
+            "img": "team-4.jpg"
+        },
+        {
+            "name": "Earl Martinez",
+            "team": "Hydroponics",
+            "linked_in": "a",
+            "instagram": "ckoron.lol",
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": false,
+            "year": 4,
+            "img": "team-1.jpg"
+        },
+        {
+            "name": "Josephine Allard",
+            "team": "Community Knights",
+            "linked_in": "a",
+            "instagram": null,
+            "email": "adamwho@gmail.com",
+            "phone": 2245196363,
+            "organizer": false,
+            "year": 1,
+            "img": "team-2.jpg"
+        }
+    ]
+}

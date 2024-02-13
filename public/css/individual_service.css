@@ -1,0 +1,28 @@
+.text_container{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_container h3{
+    margin-bottom: 15px;
+}
+
+.text{
+    width: 47%;
+}
+
+.text_container img{
+    width: 47%;
+    border-radius: 5px;
+}
+
+.header-image{
+    width: 100%;
+    border-radius: 6px;
+    /*border: 4px solid white;*/
+    box-shadow: -1px 3px 5px #000000b5;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+}

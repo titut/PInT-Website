@@ -29,6 +29,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/partner.css">
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
@@ -45,52 +46,54 @@
     </div>
 
     <!-- header section strats -->
-    <%- include("./components/header", {page: "about"}) %>
+    <%- include("./components/header", {page: "none"}) %>
     <!-- end header section -->
   </div>
 
   <!-- about section -->
 
   <section class="about_section layout_padding">
-    <div class="container  ">
+    <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          About <span>Us</span>
+          Partnership <span>Form</span>
         </h2>
-        <p>
-          We are a student-led effort to cultivate pathways for members of Olin's community. We provide opportunities where you can engage with the social impact of technology while developing engineering skills. Our mission is to empower each other to make an impact on doing good in the world.
+        <p class="form-heading-text">
+          Hi, thank you for taking an interest in partnering with Olin's Public Interest Technology (PInT) team. We are super excited to get to know and partner with you/your organization. Please fill out this form to give us a quick overview of who you are and how our team can play a role in helping your community!
         </p>
       </div>
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img class="about-img" src="images/about.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <h3>
-              Our Origin
-            </h3>
-            <p>
-Public Interest Technology at Olin (PInT @ Olin) was founded in 2019 when 4 Olin students, along with Professor Erhardt Graeff, wanted a way for the Olin community to be able to apply their technical skills to address public issues and make the world a more socially just place.
-<br><br>
-Through funding from the Public Interest Technology University Network (PIT-UN), we have been able to introduce PIT to the Olin community in a variety of ways.
-            </p>
-          </div>
-        </div>
+      <div class="form-container organization">
+        <h4>Organization</h4>
+        <div class="required-field">Name:</div>
+        <input type="text" class="form-org-name">
+        <div class="required-field">What do you guys do?</div>
+        <textarea class="form-org-what"></textarea>
       </div>
-      <div class="heading_container heading_center" style="padding: 0px 5%; text-align: left; margin-top: 50px;">
-        <h3 style="font-weight: bold;">
-          Our Mission
-        </h2>
-        <p>
-          PInT creates space for all members of the Olin community to engage with and grow their skills in public interest tech, social justice, and activism.
-          <br><br>
-          We offer opportunities for students to engage in reflection, to develop various skills, and to work on practical opportunities focused on making an impact by leveraging Olin’s "do-learn" philosophy.
-          <br><br>
-          We hope that these activities, and the space and culture we cultivate around them, will help students grow their identity as public interest technologists and feel both a responsibility and ability to create the change they want to see.
-        </p>
+      <div class="form-container">
+        <h4>Purpose</h4>
+        <div class="required-field">Why are you reaching out to us?</div>
+        <textarea class="form-purpose-why"></textarea>
+        <div class="required-field">How can we help?</div>
+        <textarea class="form-purpose-how"></textarea>
+      </div>
+      <div class="form-container">
+        <h4>Contact</h4>
+        <div class="required-field">Name of Person to Contact:</div>
+        <input type="text" class="form-contact-nameperson">
+        <div class="required-field">Email:</div>
+        <input type="text" class="form-contact-email">
+        <div>Phone:</div>
+        <input type="text" class="form-contact-phone">
+      </div>
+      <div class="form-container error">
+        <div><b>* All fields are required</b></div>
+        <div>Organization: <b>Name</b> is a required field.</div>
+        <div>Organization: <b>What do you guys do?</b> is a required field.</div>
+        <div>Purpose: <b>How can we help?</b> is a required field.</div>
+        <div>Contact: <b>Email</b> is a required field.</div>
+      </div>
+      <div class="form-container submit">
+        <button class="submit">Submit</button>
       </div>
     </div>
   </section>
@@ -108,6 +111,7 @@ Through funding from the Public Interest Technology University Network (PIT-UN),
   </script>
   <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="/js/partner.js"></script>
   <!-- owl slider -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>

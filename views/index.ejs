@@ -11,7 +11,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <link rel="shortcut icon" href="images/PInT Logo_No text light.png" type="">
 
   <title> PInT | Olin </title>
 
@@ -43,46 +43,8 @@
       </div>
     </div>
 
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand">
-            <img class="pint-logo" src="images/PInT Logo_No text light.png"/><span>PInT | Olin</span>
-          </a>
+    <%- include('./components/header', {page:"home"}); %>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Teams</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Docs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Members</a>
-              </li>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
@@ -98,10 +60,10 @@
                     <p>
                       PInT is the student-run public interest technology (PIT) organization at Olin <br>
 College of Engineering. Our mission to empower each other to build various skills <br>
-and make an impact on justice, equity, inclusion, and doing good in the world
+and make an impact on justice, equity, inclusion, and doing good in the world.
                     </p>
                     <div class="btn-box">
-                      <a class="btn1">
+                      <a class="btn1" href="/about">
                         Read More
                       </a>
                     </div>
@@ -109,7 +71,20 @@ and make an impact on justice, equity, inclusion, and doing good in the world
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img class="slide-images" src="images/home1.jpg" alt="">
+                    <img class="slide-images" src="images/home2.jpg" alt="">
+                    <img class="slide-images" src="images/home3.jpg" alt="">
+                    <img class="slide-images" src="images/home4.jpg" alt="">
+                    <img class="slide-images" src="images/home5.jpg" alt="">
+                  </div>
+                  <button class="slide-left-button" onclick="plusDivs(-1)">&#60;</button>
+                  <button class="slide-right-button" onclick="plusDivs(+1)">&#60;</button>
+                  <div class="slide-progress-bar">
+                    <div class="slide-progress-dots"></div>
+                    <div class="slide-progress-dots"></div>
+                    <div class="slide-progress-dots"></div>
+                    <div class="slide-progress-dots"></div>
+                    <div class="slide-progress-dots"></div>
                   </div>
                 </div>
               </div>
@@ -133,7 +108,7 @@ and make an impact on justice, equity, inclusion, and doing good in the world
             Our <span>Teams</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+During the school year, PInT members have the opportunity to join student-led teams to work on various semester-long PIT projects. These projects help students gain interdisciplinary skills and real world experience in fields such as education, mechanical engineering, software engineering, user-oriented design, and more. 
           </p>
         </div>
         <div class="row div-in-4">
@@ -149,7 +124,7 @@ and make an impact on justice, equity, inclusion, and doing good in the world
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
-                <a>
+                <a href="/teams/community-knights">
                   Read More
                 </a>
               </div>
@@ -167,7 +142,7 @@ and make an impact on justice, equity, inclusion, and doing good in the world
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
-                <a>
+                <a href="/teams/hydroponics">
                   Read More
                 </a>
               </div>
@@ -185,7 +160,7 @@ and make an impact on justice, equity, inclusion, and doing good in the world
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
-                <a>
+                <a href="/teams/out-maine">
                   Read More
                 </a>
               </div>
@@ -203,7 +178,7 @@ and make an impact on justice, equity, inclusion, and doing good in the world
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
-                <a>
+                <a href="/teams/bffc">
                   Read More
                 </a>
               </div>
@@ -217,144 +192,43 @@ and make an impact on justice, equity, inclusion, and doing good in the world
   <!-- end service section -->
 
   <!-- team section -->
-  <section class="team_section layout_padding">
-    <div class="container-fluid">
-      <div class="heading_container heading_center">
-        <h2 class="">
-          Our <span> Members</span>
-        </h2>
-      </div>
+  <section class="team_section service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            What is <span>Public Interest Technology?</span>
+          </h2>
+          <p style="text-align: left; max-width: 800px; margin-top: 30px;">
+            Public Interest Technology (PIT) is an emerging field focusing on educating engineers, designers, computer and data scientists, and others to work in service of the public good.
+            <br> <br>
+            Public interest technologists apply their technical knowledge and understanding of its social and political implications to promote the general public.
+          </p>
+          <div class="image-quotes">
+            <div class="left">
+              <img src="./images/PIT-UN.jpg"/>
+            </div>
+            <div class="right">
+              <p>
+                "Public interest technology refers to the study and application of technology expertise to advance the public interest/generate public benefits/promote the public good."
 
-      <div class="team_container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-1.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Joseph Brown
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a>
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
+                <br><br>
+
+                - Defining Public Interest Technology from New America
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-2.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Nancy White
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a>
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-3.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Earl Martinez
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a>
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-4.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Josephine Allard
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a>
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a>
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+          <h2>
+            PIT-<span>UN</span>
+          </h2>
+          <p style="text-align: left; max-width: 800px; margin-top: 30px;">
+            Olin is a founding member of the Public Interest Technology University Network (PIT-UN), a major initiative led by <a href="https://www.newamerica.org/">New America</a>, <a href="https://www.fordfoundation.org/">the Ford Foundation</a>, and the <a href="https://hewlett.org/">Hewlett Foundation</a>.
+            <br> <br>
+            "The Public Interest Technology University Network is a partnership that fosters collaboration between universities and colleges committed to building the nascent field of public interest technology and growing a new generation of civic-minded technologists. Through the development of curricula, research agendas, and experiential learning programs in the public interest technology space, these universities are trying innovative tactics to produce graduates with multiple fluencies at the intersection of technology and policy. By joining PIT-UN, members commit to field building on campus."
+            <br><br>
+            - New America
+          </p>
+          <div class="learn-more"><a href="https://pitcases.org/">Learn more</a></div>
         </div>
       </div>
     </div>
@@ -370,45 +244,25 @@ and make an impact on justice, equity, inclusion, and doing good in the world
         <h2>
           Get <span>Invovled!</span>
         </h2>
-        <p>
-          Join us in building a supportive community at Olin that provides opportunities to
-
-engage with and talk about PIT.
+        <p class="involved-text">
+          Join us in building a supportive community at Olin College that provides opportunities to engage with and talk about PIT.
         </p>
       </div>
-      <div class="invovled-circle-container">
-        <div class="invovled-flip-card">
-          <div class="invovled-flip-card-inner">
-            <div class="invovled-flip-card-front">
-              <img src="images\icon\calendar.png">
-            </div>
-            <div class="invovled-flip-card-back">
-              <div>Come to an Event</div>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
-            </div>
-          </div>
+      <div class="donate_container">
+        <div class="donate_box">
+          <img src="images/icon/calendar.png"/>
+          <div class="donate_title">Come to an Event</div>
+          <div class="donate_detail">Join a sub-team project or come to our community events</div>
         </div>
-        <div class="invovled-flip-card">
-          <div class="invovled-flip-card-inner">
-            <div class="invovled-flip-card-front">
-              <img src="images\icon\handshake.png">
-            </div>
-            <div class="invovled-flip-card-back">
-              <div>Partner with Us</div>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
-            </div>
-          </div>
+        <div class="donate_box">
+          <img src="images/icon/handshake.png"/>
+          <div class="donate_title">Partner with Us</div>
+          <div class="donate_detail">We are always looking for new opportunities to collaborate</div>
         </div>
-        <div class="invovled-flip-card">
-          <div class="invovled-flip-card-inner">
-            <div class="invovled-flip-card-front">
-              <img src="images\icon\circle.png">
-            </div>
-            <div class="invovled-flip-card-back">
-              <div>Make a Donation</div>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
-            </div>
-          </div>
+        <div class="donate_box" style="opacity: 0.4; cursor: default;">
+          <img src="images/icon/circle.png"/>
+          <div class="donate_title">Make a Donation</div>
+          <div class="donate_detail">Your donations help fund PIT opportunities for our members</div>
         </div>
       </div>
     </div>
@@ -419,98 +273,7 @@ engage with and talk about PIT.
 
   <!-- info section -->
 
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active">
-                Home
-              </a>
-              <a class="">
-                About
-              </a>
-              <a class="">
-                Services
-              </a>
-              <a class="">
-                Why Us
-              </a>
-              <a class="" >
-                Team
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Join the Mailing List
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+  <%- include("./components/footer") %>
 
   <!-- end info section -->
 
@@ -521,15 +284,11 @@ engage with and talk about PIT.
   </script>
   <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  <script type="text/javascript" src="/js/load_member.js"></script>
+
   </script>
-  <!-- End Google Map -->
 
 </body>
 

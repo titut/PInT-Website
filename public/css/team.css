@@ -1,0 +1,41 @@
+.white_bg{
+    background-color: white !important;
+}
+
+.team_heading{
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 45px;
+}
+
+.searchbar-container{
+    display:flex;
+    color:black;
+    padding: 0px 15px;
+    align-items: center;
+}
+
+.searchbar-container div{
+    margin-right: 10px;
+}
+
+input[name="searchbar"]{
+    margin-right: 30px;
+    width: 300px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+.sort_select{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+.subsort{
+    margin-left: 30px;
+    display: none;
+}
