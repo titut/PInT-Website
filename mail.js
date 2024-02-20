@@ -8,8 +8,8 @@ var transporter = nodemailer.createTransport({
     auth: {
         type: "OAuth2",
         user: "choangbill.le@gmail.com",
-        clientId: "447951927383-9haf79rrpsc7dd6d3nqciarb6n3kn4eq.apps.googleusercontent.com",
-        clientSecret: "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",
+        clientId: "FILL_HERE",
+        clientSecret: "FILL_HERE",
     },
 });
   
