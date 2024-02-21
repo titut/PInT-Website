@@ -1,29 +1,43 @@
 const nodemailer = require("nodemailer");
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 
-var transporter = nodemailer.createTransport({
-    service:"gmail",
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-        type: "OAuth2",
-        user: "choangbill.le@gmail.com",
-        clientId: "447951927383-9haf79rrpsc7dd6d3nqciarb6n3kn4eq.apps.googleusercontent.com",
-        clientSecret: "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",
-    },
-});
-  
-const options = {
-    from: "choangbill@gmail.com",
-    to: "cle@olin.edu",
-    subject: "TEST EMAIL",
-    text: "PLEASE WORK BRO!"
+var test_obj = {
+    org: { name: 'A', what: 'B' },
+    purpose: { why: 'C', how: 'D' },
+    contact: { nameperson: 'E', email: 'F', phone: '' }
 }
 
-transporter.sendMail(options, function(err, info){
-    if(err){
-        console.log(err);
-        return;
+function send(obj){
+    var transporter = nodemailer.createTransport({
+        service: "Gmail",
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
+        auth: {
+            user: "choangbill.le@gmail.com",
+            pass: "scoh ljee bjze xbbj",
+        },
+    });
+
+    var subject = "Form response from " + obj.org.name
+    var html_text = "<h1>Form Responses</h1><h3>Organization</h3><p>Name: " + obj.org.name + "</p><p>What they do: " + obj.org.what + "</p><h3>Purpose</h3><p>Why are you reaching out to us: " + obj.purpose.why + "</p><p>How can we help: " + obj.purpose.how + "</p><h3>Contact</h3><p>Name: " + obj.contact.nameperson + "</p><p>Email: " + obj.contact.email + "</p><p>Phone: " + obj.contact.phone + "</p>";
+    
+    const options = {
+        from: "Bill Le <choangbill@gmail.com",
+        to: "cle@olin.edu",
+        subject: subject,
+        text: "HTML did not respond.",
+        html: html_text
     }
-    console.log("Sent: " + info.response);
-})
+    
+    transporter.sendMail(options, function(err, info){
+        if(err){
+            console.log(err);
+            return;
+        }
+        console.log("Sent: " + info.response);
+    })
+}
+
+module.exports = { send }

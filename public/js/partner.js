@@ -57,6 +57,8 @@ document.querySelector(".submit").addEventListener("click", function(){
                 "Content-type": "application/json"
             }
         });
+        document.querySelector(".form_body").style.display = "none";
+        document.querySelector(".thank_you_body").style.display = "initial";
     } else {
         var newDiv = document.createElement("div");
         newDiv.innerHTML = `<b>* All fields are required</b>`

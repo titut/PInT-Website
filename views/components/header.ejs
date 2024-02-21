@@ -10,6 +10,8 @@
     <% } %>
 <% } %>
 
+<link href="/css/header.css" rel="stylesheet" />
+
 <!-- header section strats -->
 <header class="header_section">
     <div class="container-fluid">
@@ -30,11 +32,28 @@
             <li class="<%- chosen('about', page) %>">
               <a class="nav-link" href="/about">About</a>
             </li>
-            <li class="<%- chosen('teams', page) %>">
-              <a class="nav-link" href="/teams">Teams</a>
+            <li class="<%- chosen('teams', page) %> teams">
+              <a class="nav-link" href="/teams"><i class="fa fa-angle-down" aria-hidden="true" style="position: absolute; left: 4px; top: 8px;"></i> Teams</a>
+              <div class="header-dropdown">
+                <a href="/teams/community-knights">Community Knights</a>
+                <a href="/teams/hydroponics">Hydroponics</a>
+                <a href="/teams/out-maine">Out Maine</a>
+                <a href="/teams/bffc">BFFC</a>
+              </div>
             </li>
-            <li class="<%- chosen('docs', page) %>">
-              <a class="nav-link">Docs</a>
+            <li class="<%- chosen('docs', page) %> docs">
+              <a class="nav-link"><i class="fa fa-angle-down" aria-hidden="true" style="position: absolute; left: 4px; top: 8px;"></i> Docs</a>
+              <div class="header-dropdown">
+                <a href="https://olin-hydro.github.io/documentation/">Hydroponics</a>
+                <a href="https://kennethxiong23.github.io/outmaine/onboarding/">Out Maine</a>
+              </div>
+            </li>
+            <li class="<%- chosen('docs', page) %> resources">
+              <a class="nav-link"><i class="fa fa-angle-down" aria-hidden="true" style="position: absolute; left: 4px; top: 8px;"></i> Resources</a>
+              <div class="header-dropdown">
+                <a href="/partner-with-us">Contact Us</a>
+                <a href="/events">Schedule</a>
+              </div>
             </li>
             <form class="form-inline">
               <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -46,4 +65,6 @@
       </nav>
     </div>
   </header>
+
+  <script src="/js/header.js"></script>
   <!-- end header section -->

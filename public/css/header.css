@@ -1,0 +1,22 @@
+.docs, .teams, .resources{
+    position: relative;
+}
+
+.header-dropdown{
+    display: flex;
+    flex-direction: column;
+    color: rgb(112, 112, 112);
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+    top: 36px;
+    z-index: 3;
+    display: none;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    box-shadow: 0px 0px 3px rgb(108, 108, 108);
+}
+
+.header-dropdown a{
+    margin: 10px;
+}

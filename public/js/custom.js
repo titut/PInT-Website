@@ -38,3 +38,7 @@ document.getElementsByClassName("donate_box")[0].addEventListener("click", funct
 document.getElementsByClassName("donate_box")[1].addEventListener("click", function(){
   location.href = "/partner-with-us";
 })
+
+document.getElementsByClassName("donate_box")[2].addEventListener("click", function(){
+  location.href = "https://www.givecampus.com/schools/OlinCollegeofEngineering/olin-pint-2022-23";
+})
