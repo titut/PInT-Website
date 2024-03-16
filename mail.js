@@ -25,7 +25,7 @@ function send(obj){
     
     const options = {
         from: "Bill Le <choangbill@gmail.com",
-        to: "cle@olin.edu",
+        to: "pint@olin.edu",
         subject: subject,
         text: "HTML did not respond.",
         html: html_text
